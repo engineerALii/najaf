@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -102,6 +102,14 @@
         </div>
     </header>
 
+    <!-- Floating Comment CTA Button -->
+    <a href="#comments-section" class="fixed bottom-8 left-8 z-50 glass bg-blue-600/20 hover:bg-blue-600/40 text-white px-6 py-3 rounded-full shadow-[0_0_20px_rgba(59,130,246,0.6)] transition-all hover:scale-105 group flex items-center gap-3 border border-blue-400/30 animate-bounce" style="animation-duration: 3s;">
+        <span class="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-ping"></span>
+        <span class="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full"></span>
+        <i class="fas fa-comment-dots text-xl group-hover:rotate-12 transition-transform text-blue-300"></i>
+        <span class="font-bold text-sm md:text-base">شاركنا رأيك في الحدث</span>
+    </a>
+
     <!-- Main Content -->
     <main class="container mx-auto px-4 pb-20">
         
@@ -177,32 +185,32 @@
                 <p class="text-sm text-gray-400">تغطية الصحافة البريطانية للحدث في حينه.</p>
             </a>
 
-            <!-- Link 6 -->
-            <a href="https://www.bbc.com/news/world-middle-east-22145351" target="_blank" class="glass-card p-6 rounded-2xl block group relative overflow-hidden">
-                <div class="absolute top-0 left-0 w-1 h-full bg-red-700 group-hover:h-full transition-all"></div>
+            <!-- Link 6 (CBS News) -->
+            <a href="https://www.cbsnews.com/news/baghdad-falls/" target="_blank" class="glass-card p-6 rounded-2xl block group relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-1 h-full bg-teal-600 group-hover:h-full transition-all"></div>
                 <div class="flex items-start justify-between mb-4">
-                    <span class="bg-red-700/20 text-red-300 px-3 py-1 rounded-full text-xs font-bold border border-red-700/30">BBC News</span>
+                    <span class="bg-teal-600/20 text-teal-300 px-3 py-1 rounded-full text-xs font-bold border border-teal-600/30">CBS News</span>
                     <i class="fas fa-external-link-alt text-gray-400 group-hover:text-white transition-colors"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-2 group-hover:text-red-200 transition-colors">أرشيف BBC</h3>
-                <p class="text-sm text-gray-400">نظرة على الأحداث وتداعياتها في الشرق الأوسط.</p>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-teal-200 transition-colors">أرشيف CBS News</h3>
+                <p class="text-sm text-gray-400">تغطية إخبارية للحظات دخول الدبابات الأمريكية إلى ساحة الفردوس.</p>
             </a>
 
-            <!-- Link 7 -->
-            <a href="https://edition.cnn.com/2003/WORLD/meast/04/09/sprj.irq.main/" target="_blank" class="glass-card p-6 rounded-2xl block group relative overflow-hidden lg:col-span-3">
-                <div class="absolute top-0 left-0 w-1 h-full bg-red-600 group-hover:h-full transition-all"></div>
+            <!-- Link 7 (Britannica) -->
+            <a href="https://www.britannica.com/event/Iraq-War" target="_blank" class="glass-card p-6 rounded-2xl block group relative overflow-hidden lg:col-span-3">
+                <div class="absolute top-0 left-0 w-1 h-full bg-indigo-500 group-hover:h-full transition-all"></div>
                 <div class="flex items-start justify-between mb-4">
-                    <span class="bg-red-600/20 text-red-300 px-3 py-1 rounded-full text-xs font-bold border border-red-600/30">CNN</span>
+                    <span class="bg-indigo-500/20 text-indigo-300 px-3 py-1 rounded-full text-xs font-bold border border-indigo-500/30">Britannica</span>
                     <i class="fas fa-external-link-alt text-gray-400 group-hover:text-white transition-colors"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-2 group-hover:text-red-200 transition-colors">تغطية CNN المباشرة</h3>
-                <p class="text-sm text-gray-400">الأخبار العاجلة كما وردت في يوم 9 نيسان 2003.</p>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-indigo-200 transition-colors">موسوعة بريتانيكا (Britannica)</h3>
+                <p class="text-sm text-gray-400">سجل تاريخي أكاديمي يؤكد التواريخ الدقيقة لسقوط بغداد ونهاية العمليات الكبرى.</p>
             </a>
 
         </div>
 
-        <!-- Interaction Zone -->
-        <div class="max-w-4xl mx-auto">
+        <!-- Interaction Zone with ID for scrolling -->
+        <div id="comments-section" class="max-w-4xl mx-auto">
             
             <!-- Global Like Button -->
             <div class="flex justify-center mb-10">
@@ -246,8 +254,6 @@
         </div>
 
     </main>
-
-    <!-- Footer Removed -->
 
     <!-- Firebase SDKs -->
     <script type="module">
